@@ -38,11 +38,11 @@ Here's the script
             totalhietgh = windscroll+windowheis;
             
             $('span').text(windscroll+windowheis+' '+topdistace);
-                    
+            
             if(totalhietgh >= topdistace) {
                 ehidsd = topdistace-windscroll;
-                totslit = ehidsd-windowheis;
-                lowspeed = totslit/3;
+            totslit = ehidsd-windowheis;
+            lowspeed = totslit/3;
                 $('span').text(lowspeed);
                 $('#cont-2').css('background-position', '0px '+lowspeed+'px');
             } 
