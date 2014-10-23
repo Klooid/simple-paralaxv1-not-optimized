@@ -7,31 +7,28 @@ Here's the script
 
 1. html
 
-<code>
-<span>Text</span>
-
-<div id='cont-1'>
+    <span>Text</span>
     
-</div>
-
-<div id='cont-2'>
-    <h1>
-        KLOOID
-    </h1>
-    <p>
-        Networking solutions
-    </p>
-</div>
-
-<div id='cont-3'>
+    <div id='cont-1'>
+        
+    </div>
     
-</div>
-</code>
+    <div id='cont-2'>
+        <h1>
+            KLOOID
+        </h1>
+        <p>
+            Networking solutions
+        </p>
+    </div>
+    
+    <div id='cont-3'>
+        
+    </div>
 
 
 1. jQuery
 
-    <code>
     $(document).ready(function(){
         $(document).scroll(function(){
             topdistace = $('#cont-2').offset().top;
@@ -52,7 +49,6 @@ Here's the script
             else {};
         });
     });
-    </code>
 
 
 By Klooid.com
