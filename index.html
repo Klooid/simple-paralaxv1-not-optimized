@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Simple paralax</title>
+	
+	<style type="text/css">
+	  @import url(http://fonts.googleapis.com/css?family=Roboto:300,700);
+    body {
+        cursor: default;
+    }
+    span {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+        color: #000;
+        background-color: rgba(255,255,255,0.8);
+    }
+    #cont-1,
+    #cont-2,
+    #cont-3{
+        display: block;
+        margin: 0 auto;
+        height: 500px;
+        border: 1px solid #ccc;
+    }
+    #cont-2 {
+        background-image: url(http://www.osmais.com/wallpapers/201204/lampadas-wallpaper.jpg);
+        background-size: 200% auto;
+        background-repeat: no-repeat;
+        
+        transition: 0.4s;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding: 20px 0px 0px;
+        font-size: 150px;
+        text-align: center;
+        color: white;
+        margin: 0;
+    }
+    p {
+        margin: 0px;
+        color: white;
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+	</style>
+	
+</head>
+<body>
+
+
+<span>Text</span>
+
+<div id='cont-1'>
+    
+</div>
+
+<div id='cont-2'>
+    <h1>
+        KLOOID
+    </h1>
+    <p>
+        Networking solutions
+    </p>
+</div>
+
+<div id='cont-3'>
+    
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(document).scroll(function(){
+        topdistace = $('#cont-2').offset().top;
+        windscroll = $(window).scrollTop();
+        topdistan = windscroll-topdistace;
+        windowheis = $(window).height();
+        totalhietgh = windscroll+windowheis;
+        
+        $('span').text(windscroll+windowheis+' '+topdistace);
+                
+        if(totalhietgh >= topdistace) {
+            ehidsd = topdistace-windscroll;
+            totslit = ehidsd-windowheis;
+            lowspeed = totslit/3;
+            $('span').text(lowspeed);
+            $('#cont-2').css('background-position', '0px '+lowspeed+'px');
+        } 
+        else {};
+    });
+});
+</script>
+
+</body>
+</html>
