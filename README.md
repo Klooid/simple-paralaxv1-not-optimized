@@ -1,9 +1,9 @@
 simple-paralaxv1
 ================
 
-Simple paralax jQuery
+ Simple paralax jQuery
 
-Here's the script
+ Here's the script <a target='_blank' href='http://jsfiddle.net/fLz6txck/6/'>DEMO ONLINE</a>
 
 HTML
 ====
