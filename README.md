@@ -5,14 +5,13 @@ Simple paralax jQuery
 
 Here's the script
 
-1. html
+HTML
+====
 
     <span>Text</span>
-    
     <div id='cont-1'>
         
     </div>
-    
     <div id='cont-2'>
         <h1>
             KLOOID
@@ -21,13 +20,13 @@ Here's the script
             Networking solutions
         </p>
     </div>
-    
     <div id='cont-3'>
         
     </div>
 
 
-1. jQuery
+jQuery
+======
 
     $(document).ready(function(){
         $(document).scroll(function(){
